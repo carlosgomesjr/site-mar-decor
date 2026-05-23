@@ -52,16 +52,20 @@ img {
   max-width: 100%;
 }
 
-.floating-whatsapp {
+.floating-whatsapp-wrap {
   position: fixed;
   right: 1.15rem;
   bottom: 1.15rem;
   z-index: 60;
+  transition: transform 0.28s ease-out;
+}
+
+.floating-whatsapp {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 3.28rem;
+  height: 3.28rem;
   border: 1px solid rgba(255, 255, 255, 0.22);
   border-radius: 999px;
   background: var(--color-accent);
@@ -78,8 +82,8 @@ img {
 }
 
 .floating-whatsapp-icon {
-  width: 1.65rem;
-  height: 1.65rem;
+  width: 1.88rem;
+  height: 1.88rem;
 }
 
 .nav-shell {

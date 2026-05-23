@@ -346,6 +346,7 @@ function FeaturedCarouselCard({ item, featured = false }) {
 
 function App() {
   const [exploreOpen, setExploreOpen] = useState(false)
+  const [floatingOffset, setFloatingOffset] = useState(0)
 
   useEffect(() => {
     const processEmbeds = () => window.instgrm?.Embeds?.process()
@@ -375,24 +376,41 @@ function App() {
     }
   }, [])
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const offset = Math.min(window.scrollY * 0.06, 26)
+      setFloatingOffset(offset)
+    }
+
+    handleScroll()
+    window.addEventListener('scroll', handleScroll, { passive: true })
+
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
   return (
     <main className="bg-[var(--color-bg)] text-[var(--color-ink)]">
-      <a
-        href={whatsappUrl}
-        target="_blank"
-        rel="noreferrer"
-        className="floating-whatsapp"
-        aria-label="Falar no WhatsApp"
+      <div
+        className="floating-whatsapp-wrap"
+        style={{ transform: `translateY(${floatingOffset}px)` }}
       >
-        <svg
-          viewBox="0 0 24 24"
-          aria-hidden="true"
-          className="floating-whatsapp-icon"
-          fill="currentColor"
+        <a
+          href={whatsappUrl}
+          target="_blank"
+          rel="noreferrer"
+          className="floating-whatsapp"
+          aria-label="Falar no WhatsApp"
         >
-          <path d="M19.05 4.94A9.77 9.77 0 0 0 12.1 2C6.67 2 2.25 6.4 2.25 11.82c0 1.74.45 3.43 1.31 4.92L2 22l5.41-1.42a9.87 9.87 0 0 0 4.69 1.19h.01c5.43 0 9.84-4.4 9.84-9.82 0-2.62-1.02-5.08-2.9-6.99Zm-6.95 15.17h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.21.84.86-3.12-.2-.32a8.11 8.11 0 0 1-1.25-4.35c0-4.49 3.67-8.15 8.19-8.15 2.18 0 4.23.84 5.77 2.38a8.06 8.06 0 0 1 2.39 5.76c0 4.5-3.68 8.16-8.06 8.29Zm4.47-6.09c-.24-.12-1.43-.7-1.65-.78-.22-.08-.38-.12-.53.12-.16.24-.61.78-.75.93-.14.16-.28.18-.52.06-.24-.12-1.01-.37-1.92-1.18-.7-.62-1.18-1.39-1.32-1.62-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.53-1.28-.73-1.75-.19-.46-.38-.4-.53-.41h-.45c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2 0 1.18.86 2.32.98 2.48.12.16 1.69 2.57 4.1 3.61.57.25 1.02.4 1.36.51.57.18 1.09.15 1.5.09.46-.07 1.43-.58 1.63-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28Z" />
-        </svg>
-      </a>
+          <svg
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+            className="floating-whatsapp-icon"
+            fill="currentColor"
+          >
+            <path d="M19.05 4.94A9.77 9.77 0 0 0 12.1 2C6.67 2 2.25 6.4 2.25 11.82c0 1.74.45 3.43 1.31 4.92L2 22l5.41-1.42a9.87 9.87 0 0 0 4.69 1.19h.01c5.43 0 9.84-4.4 9.84-9.82 0-2.62-1.02-5.08-2.9-6.99Zm-6.95 15.17h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.21.84.86-3.12-.2-.32a8.11 8.11 0 0 1-1.25-4.35c0-4.49 3.67-8.15 8.19-8.15 2.18 0 4.23.84 5.77 2.38a8.06 8.06 0 0 1 2.39 5.76c0 4.5-3.68 8.16-8.06 8.29Zm4.47-6.09c-.24-.12-1.43-.7-1.65-.78-.22-.08-.38-.12-.53.12-.16.24-.61.78-.75.93-.14.16-.28.18-.52.06-.24-.12-1.01-.37-1.92-1.18-.7-.62-1.18-1.39-1.32-1.62-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.53-1.28-.73-1.75-.19-.46-.38-.4-.53-.41h-.45c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2 0 1.18.86 2.32.98 2.48.12.16 1.69 2.57 4.1 3.61.57.25 1.02.4 1.36.51.57.18 1.09.15 1.5.09.46-.07 1.43-.58 1.63-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28Z" />
+          </svg>
+        </a>
+      </div>
 
       <header className="fixed inset-x-0 top-4 z-50 px-4 sm:px-5">
         <div className="mx-auto max-w-[1380px]">
