@@ -1321,6 +1321,11 @@ img {
     color: #b2dbc1;
   }
 
+  .hero-actions .primary-cta,
+  .hero-actions .secondary-cta {
+    font-size: 0.78rem;
+  }
+
   .hero-meta {
     grid-template-columns: 1fr;
     gap: 1rem;
