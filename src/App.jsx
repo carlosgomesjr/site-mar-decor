@@ -78,10 +78,14 @@ const productCards = [
     ],
   },
   {
-    title: 'Gesso',
+    title: 'Gesso 3D',
     label: 'Acabamento decorativo',
     text: 'Aplicações em gesso para valorizar paredes e composições internas com mais presença visual.',
-    images: ['/assets/mardecor/gesso.jpg', '/assets/mardecor/gesso2.jpg'],
+    images: [
+      '/assets/mardecor/gesso3.avif',
+      '/assets/mardecor/gesso.jpg',
+      '/assets/mardecor/gesso2.jpg',
+    ],
   },
   {
     title: 'Teto em madeira',
