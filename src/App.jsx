@@ -104,10 +104,10 @@ const productCards = [
     ],
   },
   {
-    title: 'Portas',
+    title: 'Portas sanfonadas',
     label: 'Fechamento e acabamento',
     text: 'Instalações que completam o ambiente com funcionalidade, ajuste correto e melhor acabamento final.',
-    images: ['/assets/mardecor/portas.jpg'],
+    images: ['/assets/mardecor/portas2.jpg', '/assets/mardecor/portas.jpg'],
   },
   {
     title: 'Divisória Eucatex',
