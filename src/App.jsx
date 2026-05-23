@@ -120,9 +120,9 @@ const productCards = [
     ],
   },
   {
-    title: 'Teto em drywall',
+    title: 'Teto em PVC',
     label: 'Forro e composição',
-    text: 'Execução de teto em drywall para ambientes que pedem acabamento uniforme e leitura visual mais refinada.',
+    text: 'Instalação de teto em PVC para ambientes que pedem praticidade, acabamento uniforme e visual bem resolvido.',
     images: [
       '/assets/mardecor/teto dry wall.jpg',
       '/assets/mardecor/teto dry wall2.jpg',
