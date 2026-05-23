@@ -1279,7 +1279,8 @@ img {
   }
 
   .hero-copy {
-    font-size: 0.96rem;
+    font-size: 1.04rem;
+    line-height: 1.78;
   }
 
   .hero-meta {
@@ -1291,6 +1292,47 @@ img {
   .editorial-title,
   .contact-title {
     font-size: 2.25rem;
+  }
+
+  .editorial-copy,
+  .contact-copy {
+    font-size: 1rem;
+    line-height: 1.82;
+  }
+
+  .support-copy,
+  .hero-meta span,
+  .contact-meta span,
+  .footer-links,
+  .footer-copy {
+    font-size: 0.95rem;
+    line-height: 1.8;
+  }
+
+  .showcase-copy span,
+  .showcase-mini-copy span,
+  .product-card-copy span,
+  .method-card-copy span,
+  .proof-review-quote {
+    font-size: 0.96rem;
+    line-height: 1.75;
+  }
+
+  .showcase-copy p,
+  .showcase-mini-copy p,
+  .product-card-copy p,
+  .method-card-copy p,
+  .proof-review-name,
+  .footer-label,
+  .hero-meta p,
+  .contact-meta p,
+  .section-intro,
+  .hero-label {
+    font-size: 0.72rem;
+  }
+
+  .about-points span {
+    font-size: 0.88rem;
   }
 
   .footer-legal {
