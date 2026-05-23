@@ -88,10 +88,14 @@ const productCards = [
     ],
   },
   {
-    title: 'Teto em madeira',
-    label: 'Textura e aconchego',
-    text: 'Solução para quem busca um teto com mais presença estética, calor visual e acabamento marcante.',
-    images: ['/assets/mardecor/teto madeira.jpg'],
+    title: 'Teto em gesso',
+    label: 'Acabamento e composição',
+    text: 'Aplicação de teto em gesso para ambientes que pedem melhor acabamento, composição visual mais elegante e resultado bem resolvido.',
+    images: [
+      '/assets/mardecor/teto1.jpg',
+      '/assets/mardecor/teto2.jpg',
+      '/assets/mardecor/teto3.jpg',
+    ],
   },
   {
     title: 'Papel de parede',
