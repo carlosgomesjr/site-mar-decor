@@ -37,9 +37,9 @@ const featuredWorks = [
     title: 'Persiana romana',
     label: 'Volume e suavidade',
     images: [
+      '/assets/mardecor/romana3.avif',
+      '/assets/mardecor/romana2.avif',
       '/assets/mardecor/romana.jpg',
-      '/assets/mardecor/romana2.png',
-      '/assets/mardecor/romana3.png',
     ],
     description:
       'Uma opção para quem quer um resultado mais decorativo sem perder praticidade no uso diário.',
