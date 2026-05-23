@@ -110,12 +110,13 @@ const productCards = [
     images: ['/assets/mardecor/portas.jpg'],
   },
   {
-    title: 'Divisória em drywall',
+    title: 'Divisória Eucatex',
     label: 'Organização de ambientes',
     text: 'Estrutura para dividir ambientes com acabamento limpo e solução funcional para áreas residenciais e comerciais.',
     images: [
-      '/assets/mardecor/divisoria dry wall2.jpg',
-      '/assets/mardecor/divisoria dry wall.jpg',
+      '/assets/mardecor/Divisórias Eucatex1.jpg',
+      '/assets/mardecor/Divisórias Eucatex2.jpg',
+      '/assets/mardecor/Divisórias Eucatex3.jpg',
     ],
   },
   {
