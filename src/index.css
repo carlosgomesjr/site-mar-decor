@@ -55,7 +55,7 @@ img {
 .floating-whatsapp-wrap {
   position: fixed;
   right: 1.15rem;
-  bottom: 1.15rem;
+  bottom: 2.25rem;
   z-index: 60;
   transition: transform 0.28s ease-out;
 }
