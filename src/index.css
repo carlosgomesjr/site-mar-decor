@@ -1046,12 +1046,6 @@ img {
 
 .hero-copy .accent-word {
   color: #3f9877;
-  display: inline;
-  padding: 0 0.22em;
-  border-radius: 0.35rem;
-  background: rgba(8, 14, 12, 0.5);
-  box-decoration-break: clone;
-  -webkit-box-decoration-break: clone;
 }
 
 .hero-actions {
